@@ -1,0 +1,71 @@
+.account-container {
+  padding: 48px 0;
+  min-height: calc(100vh - 436px);
+}
+
+.account__nav {
+  list-style: none;
+
+  > li {
+    padding: 9px 0;
+
+    > * {
+      cursor: pointer;
+      font-weight: getFontWeight('medium');
+      border: none;
+      background-color: transparent;
+      color: getColor('grey.100');
+    }
+
+    > .active {
+      color: getColor('secondary.pink');
+      font-weight: getFontWeight('bold');
+    }
+
+    > button:hover {
+      text-decoration: underline;
+    }
+  }
+
+  > li:first-child {
+    padding-top: 0;
+  }
+}
+
+.account-info__wrapper {
+  border: 1px solid #c4c4c4;
+  padding: 20px 24px;
+}
+
+.account-form__wrapper {
+  max-width: 432px;
+}
+
+.account-form__input-wrapper {
+  margin-bottom: 10px;
+}
+
+.account-form__confirmation {
+  font-weight: getFontWeight('medium');
+}
+
+.account-form__header {
+  line-height: 1.6;
+}
+
+.user-information-table-data {
+  color: #495057;
+}
+
+.account-setting__table {
+  .row {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}
+
+.table-value {
+  &.email {
+    overflow-wrap: anywhere;
+  }
+}

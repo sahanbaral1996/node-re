@@ -1,0 +1,13 @@
+version: "3.4"  
+services:
+  web:
+    build:
+      context: ./
+      target: "${TARGET}"
+    image: "revea-backend:${TARGET}"
+    volumes:
+    - .:/src
+    ports:
+      - "${PORT}:4000"
+    env_file:
+      - .env

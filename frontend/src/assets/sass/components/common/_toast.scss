@@ -1,0 +1,43 @@
+.iziToast {
+  border-radius: 0 !important;
+  min-width: 280px !important;
+}
+
+.iziToast > .iziToast-body {
+  padding-left: 20px !important;
+}
+.iziToast > .iziToast-body .iziToast-icon {
+  height: 26px !important;
+  width: 26px !important;
+}
+
+.iziToast > .iziToast-body .iziToast-texts {
+  display: flex !important;
+  flex-direction: column;
+  margin: 4px 0 0 20px !important;
+}
+
+.iziToast > .iziToast-body .iziToast-icon {
+  top: 20px !important;
+}
+
+.iziToast > .iziToast-body .iziToast-title {
+  margin-bottom: 6px !important;
+  font-family: 'Venti CF', sans-serif !important;
+  font-size: 16px !important;
+  line-height: 19px !important;
+}
+
+.iziToast > .iziToast-body .iziToast-message {
+  font-family: 'Venti CF', sans-serif !important;
+}
+
+.iziToast > .iziToast-close {
+  background-size: 12px !important;
+  background-position-y: 20px !important;
+  color: getColor('grey.100');
+}
+
+.custom-toast__error.iziToast > .iziToast-body .iziToast-icon {
+  height: auto !important;
+}

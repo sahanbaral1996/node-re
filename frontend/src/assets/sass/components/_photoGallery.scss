@@ -1,0 +1,22 @@
+.photo-gallery__container {
+  max-height: 60vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.photo-gallery__img {
+  width: 118px;
+  height: 112px;
+  object-fit: cover;
+  cursor: pointer;
+
+  &:hover, :focus {
+    box-shadow: $box-shadow;
+  }
+
+}
+
+.photo-gallery__group-heading {
+  font-size: getFontSize("small");
+  color: $border-color;
+}

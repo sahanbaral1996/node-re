@@ -1,0 +1,173 @@
+
+// font declaration
+
+
+@font-face {
+  font-family: "Euclid Circular A";
+  src: url("../../fonts/EuclidCircularA-Bold.eot");
+  src: local("Euclid Circular A Bold"), local("EuclidCircularA-Bold"),
+      url("../../fonts/EuclidCircularA-Bold.eot?#iefix") format("embedded-opentype"),
+      url("../../fonts/EuclidCircularA-Bold.woff2") format("woff2"),
+      url("../../fonts/EuclidCircularA-Bold.woff") format("woff"),
+      url("../../fonts/EuclidCircularA-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Euclid Circular A";
+  src: url("../../fonts/EuclidCircularA-Regular.eot");
+  src: local("Euclid Circular A"), local("EuclidCircularA-Regular"),
+      url("../../fonts/EuclidCircularA-Regular.eot?#iefix") format("embedded-opentype"),
+      url("../../fonts/EuclidCircularA-Regular.woff2") format("woff2"),
+      url("../../fonts/EuclidCircularA-Regular.woff") format("woff"),
+      url("../../fonts/EuclidCircularA-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Venti CF";
+  src: url("../../fonts/VentiCF-Regular.eot");
+  src: local("Venti CF Regular"), local("VentiCF-Regular"),
+      url("../../fonts/VentiCF-Regular.eot?#iefix") format("embedded-opentype"),
+      url("../../fonts/VentiCF-Regular.woff2") format("woff2"),
+      url("../../fonts/VentiCF-Regular.woff") format("woff"),
+      url("../../fonts/VentiCF-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Venti CF Demi";
+  src: url("../../fonts/VentiCF-DemiBold.eot");
+  src: local("Venti CF Demi Bold"), local("VentiCF-DemiBold"),
+      url("../../fonts/VentiCF-DemiBold.eot?#iefix") format("embedded-opentype"),
+      url("../../fonts/VentiCF-DemiBold.woff2") format("woff2"),
+      url("../../fonts/VentiCF-DemiBold.woff") format("woff"),
+      url("../../fonts/VentiCF-DemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Venti CF";
+  src: url("../../fonts/VentiCF-Bold.eot");
+  src: local("Venti CF Bold"), local("VentiCF-Bold"),
+      url("../../fonts/VentiCF-Bold.eot?#iefix") format("embedded-opentype"),
+      url("../../fonts/VentiCF-Bold.woff2") format("woff2"),
+      url("../../fonts/VentiCF-Bold.woff") format("woff"),
+      url("../../fonts/VentiCF-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+    font-family: 'Venti CF';
+    src: url('../../fonts/VentiCF-BoldItalic.eot');
+    src: url('../../fonts/VentiCF-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/VentiCF-BoldItalic.woff2') format('woff2'),
+        url('../../fonts/VentiCF-BoldItalic.woff') format('woff'),
+        url('../../fonts/VentiCF-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* font declaration end ---------------- */
+
+
+// Base font size
+$base__header__line: 1.25 !default;
+$base__body__line: 1.3 !default;
+$base__font-size: 1.125rem !default;
+
+// Custom font url
+$font-url: 'https://rsms.me/inter/inter.css' !default;
+$font-custom: 'Venti CF', sans-serif !default;
+
+// Font Declaration
+$font-primary: $font-custom;
+$font-secondary: 'Venti CF', sans-serif;
+
+//font-weight
+$fontWeight: (
+  'light': 300,
+  'normal': 400,
+  'medium': 500,
+  'semibold': 600,
+  'bold': 700,
+  'heavy': 900,
+);
+
+$fontSize: (
+  'header': (
+    'h1': (
+      'font-size': 3rem,
+      'line-height': $base__header__line,
+    ),
+    'h2': (
+      'font-size': 2rem,
+      'line-height': $base__header__line,
+    ),
+    'h3': (
+      'font-size': 1.5rem,
+      'line-height': $base__header__line,
+    ),
+    'h4': (
+      'font-size': 1.25rem,
+      'line-height': $base__header__line,
+    ),
+    'h5': (
+      'font-size': 1.125rem,
+      'line-height': $base__header__line,
+    ),
+    'h6': (
+      'font-size': 1rem,
+      'line-height': $base__header__line,
+    ),
+  ),
+  'font': (
+    'xxx-small': 0.5rem,
+    'xx-small': 0.625rem,
+    'x-small': 0.75rem,
+    'small': 0.875rem,
+    'normal': 1rem,
+    'large': 1.125rem,
+    'x-large': 1.25rem,
+    'xx-large': 1.5rem,
+    'xxx-large': 1.75rem,
+    'xxxx-large': 2rem,
+    'xxxxx-large': 2.25rem,
+    'super-large': 3rem,
+  ),
+);
+
+$fontDecoration: (
+  'striked': line-through,
+  'underlined': underline,
+);
+
+$fontCase: (
+  'uppercase': uppercase,
+  'lowercase': lowercase,
+  'capitalized': capitalize,
+);
+
+$fontStyle: (
+  'normal': normal,
+  'italic': italic,
+  'oblique': oblique,
+);
+
+$textAlignment: (
+  'center': center,
+  'left': left,
+  'right': right,
+  'justified': justify,
+  'initial': initial,
+);

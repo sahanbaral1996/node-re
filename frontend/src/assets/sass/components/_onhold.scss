@@ -1,0 +1,5 @@
+.on-hold__wrapper {
+  height: calc(100vh - #{$header-height});
+  background: getColor('primary.pink');
+  z-index: -1;
+}

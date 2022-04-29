@@ -1,0 +1,213 @@
+.full-face {
+  &-description {
+    border: 1px solid #c4c4c4;
+  }
+  &-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-button {
+    &.add {
+      color: #b91f56;
+      background-color: transparent;
+      font-style: normal;
+    }
+  }
+  &-free {
+    white-space: nowrap;
+  }
+}
+
+.essential-product {
+  line-height: 1.2;
+  text-align: left;
+  font-style: normal;
+  letter-spacing: 0em;
+  font-family: 'Venti CF', sans-serif;
+
+  .details {
+    .header {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #212123;
+    }
+
+    .description {
+      font-size: 1.25rem;
+      font-weight: 500;
+      color: #495057;
+    }
+
+    .disclaimer {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #495057;
+    }
+    
+    .explore-cleansers {
+      font-family: 'Venti CF', sans-serif;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: 0em;
+      text-align: left;
+      text-decoration: underline;
+      color: #B91F56;
+      
+      a {
+	color: #B91F56;
+      }
+    }
+  }
+}
+
+.second-header-description {
+  font-family: 'Venti CF', sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #495057;
+}
+
+.pricing-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: #d6902914;
+  font-family: 'Venti CF', sans-serif;
+  font-style: normal;
+  letter-spacing: 0em;
+  line-height: 1.2;
+  font-size: 1.125rem;
+  color: #495057;
+
+  .pricing {
+    font-weight: 700;
+  }
+
+  .disclaimer {
+    font-weight: 400;
+    text-align: center;
+    color: #b91f56;
+    font-style: italic;
+  }
+}
+
+.first-month-free {
+  font-family: 'Venti CF', sans-serif;
+  font-size: 0.875rem;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0em;
+  text-align: right;
+  color: #b91f56;
+}
+
+.product-container {
+  .details {
+    font-family: 'Venti CF', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: 0em;
+    text-align: left;
+
+    .name {
+      font-weight: 700;
+    }
+
+    .description {
+      font-weight: 500;
+    }
+  }
+}
+
+.divider {
+  height: 1px;
+  background: #c4c4c4;
+  margin-bottom: 24px;
+
+  &.primary {
+    position: relative;
+    height: auto;
+    background: inherit;
+    margin-bottom: 30px;
+
+    .line {
+      position: absolute;
+      top: 50%;
+      z-index: -1;
+      width: 100%;
+      height: 2px;
+      background-color: #3c4866;
+    }
+
+    .text {
+      display: block;
+      width: max-content;
+      margin-right: auto;
+      margin-left: auto;
+      padding: 16px 12px 12px;
+      border: 2px solid #3c4866;
+      background-color: #fff;
+      box-shadow: 0 0 0 2px #fff, 0 0 0 5px #3c4866, 0 0 0 30px #fff;
+      color: #3c4866;
+
+      font-family: 'Euclid Circular A', sans-serif;
+      font-size: 0.875rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 1.2;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+  }
+}
+
+.rating {
+  .stars {
+    display: inline-block;
+    unicode-bidi: bidi-override;
+    color: #888888;
+    font-size: 1.563rem;
+    height: 25px;
+    width: auto;
+    margin: 0;
+    position: relative;
+    padding: 0;
+
+    .upper {
+      color: #e7b56b;
+      padding: 0;
+      position: absolute;
+      z-index: 1;
+      display: flex;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+    }
+
+    .lower {
+      padding: 0;
+      display: flex;
+      z-index: 0;
+    }
+  }
+  .value {
+    font-family: 'Venti CF', sans-serif;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #a4a4a4;
+  }
+}

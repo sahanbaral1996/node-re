@@ -1,0 +1,25 @@
+.confirmation__wrapper{
+  .confirmation__body{
+    padding: 0 24px;
+  }
+}
+
+.confirmation__title {
+  line-height: 30.75px;
+  font-size: getFontSize('xxxx-large');
+  font-weight: getFontWeight('bold');
+  margin-bottom: 17px;
+}
+
+.confirmation__detail {
+  font-weight: getFontWeight('normal');
+  font-size: getFontSize('normal');
+}
+
+.confirmation__detail--primary {
+  margin-bottom: 24px;
+}
+
+.order-review__bottom-wrapper {
+  margin-top: 35px !important;
+}

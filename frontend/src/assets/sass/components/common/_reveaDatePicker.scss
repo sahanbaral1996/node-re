@@ -1,0 +1,32 @@
+.react-date-picker__wrapper {
+    border: none !important;
+}
+
+.react-date-picker__label {
+    margin-bottom: 4px;
+    display: inline-block;
+    font-weight: bold;
+    color: getColor('grey.100');
+    font-size: getFontSize('normal');
+}
+
+
+.revea-date-picker {
+    width: 100%;
+}
+
+.react-date-picker__wrapper {
+    border: none;
+}
+
+.input-error {
+    border: 1px solid red;
+}
+
+.red {
+    color: red;
+}
+
+.react-date-picker__inputGroup__input:invalid {
+    background: transparent !important;
+}

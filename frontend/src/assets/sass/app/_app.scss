@@ -1,0 +1,41 @@
+.custom-scrollbar {
+  &::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #dddddd;
+    border-radius: 10px;
+    &:hover {
+      background-color: darken(#dddddd, 5%);
+    }
+  }
+}
+
+.regimen-label {
+  color: getColor('grey.75');
+  font-size: getFontSize('xx-large');
+  line-height: 29px;
+  font-weight: getFontWeight('bold');
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.app-wrapper {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}

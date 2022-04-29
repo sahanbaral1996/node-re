@@ -1,0 +1,41 @@
+.questionnaire__title {
+  font-size: getFontSize('xx-large');
+  line-height: 28.8px;
+  font-weight: getFontWeight('semibold');
+  margin: 24px 0px 24px;
+  color: getColor('grey.100');
+  font-family: 'Venti CF';
+}
+
+.questionnaire__description {
+  font-weight: getFontWeight('bold');
+  font-size: getFontSize('large');
+  line-height: 20px;
+  color: getColor('grey.75');
+  margin: 0px 0px 10px;
+}
+
+.questionnaire__content {
+  margin-bottom: 20px;
+}
+
+.mr-4 {
+  margin-right: 16px;
+}
+
+.questionnaire__button-wrapper {
+  margin-bottom: 20px;
+}
+
+.none-text a {
+  cursor: pointer;
+  font-size: 14px !important;
+}
+
+@media screen and (min-width: 600px) {
+  .questionnaire {
+    width: 500px;
+    margin: 0 auto;
+  }
+}
+

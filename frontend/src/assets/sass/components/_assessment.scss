@@ -1,0 +1,53 @@
+.assessment {
+  padding: 45px 0px;
+  background-color: getColor('white.base');
+  font-family: $font-primary !important;
+}
+
+.assessment__content {
+  padding-top: 20px;
+}
+
+.specific-medication {
+  margin-bottom: 16px;
+}
+
+.MuiTypography-body1 {
+  line-height: 1.3 !important;
+  font-family: $font-primary !important;
+}
+
+.MuiFormControlLabel-root {
+  + .border__wrap {
+    margin: 1rem 0;
+  }
+}
+
+.assessment-stepper__steps-mobile {
+  display: none;
+}
+
+.assessment-stepper__dash {
+  border-bottom: 1px solid getColor('grey.50');
+  width: 18px;
+  margin: 0 14px 8px;
+}
+
+.assessment-stepper__label {
+  font-weight: getFontWeight('bold');
+}
+
+@media screen and (max-width: 576px) {
+
+  .assessment {
+    .MuiStepLabel-labelContainer {
+      display: none;
+    }
+
+    .assessment-stepper__steps-mobile {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+}

@@ -1,0 +1,46 @@
+.footer-layout {
+  padding: 8px;
+  @include mqmax(sm) {
+    padding: 16px;
+  }
+}
+
+.footer-line > img {
+  width: 100%;
+}
+
+.footer-links {
+  color: getColor('white.base');
+
+  & > li {
+    margin-right: 43px;
+    list-style-type: none;
+  }
+
+
+  a:link, a:visited, a:hover, a:active {
+    color: inherit;
+  }
+
+}
+
+.social-links {
+  font-weight: 700;
+}
+.company-links {
+  font-size: getFontSize('small');
+}
+
+.site-footer {
+  background-color: getColor('primary.blue');
+}
+
+@media only screen and (min-width: 750px) {
+  .site-footer {
+      padding: 60px 96px 20px 96px;
+  }
+}
+
+.content-footer-wrapper {
+  height: calc(100vh - 70px); // 70px is header height
+}

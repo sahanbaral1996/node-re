@@ -1,0 +1,15 @@
+.topical-retinoid__heading {
+  margin-top: 0px;
+  font-size: getFontSize('large');
+  font-weight: getFontWeight('bold');
+  color: getColor('grey.100');
+  margin-bottom: 1em;
+}
+
+.topical-retinoid__text {
+  margin-bottom: 10px;
+}
+
+.topical-retinoid__text:last-child {
+  margin-bottom: 0px;
+}

@@ -1,0 +1,52 @@
+.order-confirmed {
+  &__container {
+    min-height: 414px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__title {
+    font-size: 48px;
+    font-weight: getFontWeight('bold');
+    line-height: 96.1%;
+    color: getColor('black.base');
+    margin-bottom: 28px;
+  }
+
+  &__description {
+    line-height: 19px;
+    font-size: 16px;
+    font-weight: getFontWeight('normal');
+    max-width: 690px;
+  }
+  &__description1 {
+    line-height: 19px;
+    font-size: 24px;
+    font-weight: getFontWeight('bold');
+    max-width: 690px;
+  }
+  &__email {
+    color:#B91F56;
+  }
+
+
+}
+
+@media screen and (max-width: 576px) {
+  .order-confirmed {
+    &__container {
+      padding: 0 24px;
+    }
+
+    &__title {
+      font-size: 27px;
+      margin-bottom: 16px;
+    }
+
+    &__img {
+      display: none;
+    }
+  }
+}

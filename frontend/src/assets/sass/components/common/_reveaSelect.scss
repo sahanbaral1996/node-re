@@ -1,0 +1,14 @@
+.styled-select select {
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+}
+
+select {
+    border: 0;
+    padding: 5px;
+    height: 24px;
+    border-radius: 5px;
+    -webkit-appearance: none;
+    background: url(../../../images/arrow_drop_down.png) no-repeat right #ddd;
+}

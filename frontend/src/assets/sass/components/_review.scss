@@ -1,0 +1,110 @@
+.review {
+  &.title {
+    font-family: 'Venti CF', sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  &.solid {
+    border: 1px solid #c4c4c4 !important;
+  }
+
+  &.description {
+    font-family: 'Venti CF', sans-serif;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #495057;
+  }
+
+  &.question {
+    font-family: 'Venti CF', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .textarea__label {
+    font-family: 'Venti CF', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  &.upload-image {
+    &.title {
+      font-family: 'Venti CF', sans-serif;
+      font-size: 1.125rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+
+    &.description {
+      font-family: 'Venti CF', sans-serif;
+      font-size: 1rem !important;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 1.2 !important;
+      letter-spacing: 0em;
+      text-align: center;
+      color: #495057;
+    }
+  }
+
+  &.disclaimer {
+    font-family: 'Venti CF', sans-serif;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #495057;
+  }
+
+  &.recommend {
+    &.button {
+      &.text {
+        font-family: 'Venti CF', sans-serif;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.2;
+        letter-spacing: 0em;
+        text-align: center;
+      }
+    }
+  }
+}
+
+// toggle button selectors
+
+.toggle-yes-no-button {
+  img {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+}
+
+.show-element {
+  width: auto !important;
+  height: auto !important;
+  overflow: visible !important;
+}

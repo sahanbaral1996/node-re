@@ -1,0 +1,217 @@
+.treatment__card-review {
+  flex: 1;
+
+  & > * {
+    height: 402px;
+    object-fit: cover;
+  }
+}
+
+.order-review__title {
+  font-size: getFontSize('xx-large');
+  margin-top: 13px;
+  margin-bottom: 8px;
+  color: getColor('grey.75');
+  font-weight: getFontWeight('bold');
+  line-height: 29px;
+}
+
+.order-rx__container {
+  border: 1px solid $border-color;
+}
+
+.order-rx__btn {
+  line-height: 18px;
+  &.make-changes{
+    font-weight: getFontWeight('normal') !important;
+  }
+}
+
+.order-review__container {
+  .card__media {
+    max-height: none;
+    word-break: break-all;
+  }
+}
+
+.order-review--bg-pink {
+  background-color: getColor('primary.pink');
+}
+
+.make-edit__btn {
+  background-color: getColor('grey.50');
+}
+
+.order-review-edit-dialog__header {
+  margin-bottom: 20px;
+  color: getColor('primary.red');
+  font-size: getFontSize('xx-large');
+}
+
+.order-review-edit-dialog__question {
+  @extend .mb-4x;
+  color: getColor('black.base');
+  font-weight: getFontWeight('normal');
+}
+
+.order-review-edit-dialog__button-wrapper {
+  margin-top: 20px;
+}
+
+.order-review-status__on-hold {
+  margin: 10px 0;
+  color: getColor('primary.red');
+  font-size: getFontSize('x-small');
+  font-weight: getFontWeight('semibold');
+}
+
+.card__title {
+  color: getColor('grey.100');
+}
+
+.card__title.order-review__title {
+  font: 700 48px 'Venti CF', sans-serif;
+  line-height: 96.1%;
+  margin-bottom: 35px;
+}
+
+.card__subtitle.order-review__subtitle {
+  line-height: 23px;
+  color: getColor('grey.100');
+  font-weight: getFontWeight('bold');
+  font-size: 18px;
+}
+
+.card.card_wrapper {
+  border-radius: 0;
+  background: rgba(214, 144, 41, 0.08);
+  position: relative;
+  padding: 16px;
+
+  .order-illustration {
+    position: absolute;
+    right: 1rem;
+    bottom: -4rem;
+  }
+}
+
+.textarea__border {
+  border: 1px solid #c4c4c4;
+  padding: 18px 23px;
+  color: getColor('grey.75');
+  background: #ffffff;
+}
+
+.btn__feedback--send {
+  margin-right: 0.5rem;
+}
+
+.order-review__detail--title {
+  color: getColor('black.base');
+  font-weight: getFontWeight('bold');
+  font-size: 48px;
+  line-height: 96.1%;
+}
+
+.order-review-edit-dialog__body {
+  margin-top: 31px;
+}
+
+.order-approve__detail--subtitle {
+  font-weight: getFontWeight('light');
+  font-size: getFontSize('large');
+  line-height: 29px;
+  color: getColor('black.base');
+  margin: 24px 0 16px;
+}
+
+.order-approve__detail--question {
+  font-weight: getFontWeight('bold');
+  font-size: 18px;
+  line-height: 23px;
+  color: getColor('black.base');
+  margin-bottom: 9px;
+}
+
+.order-approve__detail--answer {
+  margin-bottom: 33px;
+  color: getColor('black.base');
+}
+
+.feedback-msg__description {
+  color: getColor('black.base');
+  margin: 27px 0 36px;
+
+  a {
+    text-decoration: underline;
+    color: getColor('black.base');
+  }
+}
+
+.feedback-msg__description--primary {
+  margin-bottom: 24px;
+}
+
+.order-review__wrapper {
+  @extend .py-16x;
+  background-color: getColor('white.base');
+}
+
+.media__title {
+  font: 700 16px/1.25 'Venti CF', sans-serif;
+  color: getColor('secondary.pink');
+  text-decoration: underline;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.card__detail {
+  margin-bottom: 62px;
+}
+
+.goal__header {
+  font-size: getFontSize('large');
+  color: getColor('grey.100');
+}
+
+.regimen-details {
+  color: #495057;
+  margin-bottom: 16px;
+}
+
+.skin-condition-skeleton {
+  margin-bottom: 44px;
+}
+
+@media screen and (min-width: 768px) {
+  .card.card_wrapper {
+    padding: 8px 24px;
+
+    .order-illustration {
+      right: 2rem;
+      bottom: -6rem;
+    }
+  }
+
+  .order-rx__btn {
+    line-height: 24px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .card.card_wrapper {
+    padding: 41px 54px 64px;
+
+    .order-illustration {
+      left: 4rem;
+      bottom: -4rem;
+    }
+  }
+
+  .order-review__container {
+    display: flex;
+    padding: 36px 0px;
+  }
+}

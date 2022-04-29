@@ -1,0 +1,93 @@
+.revea-scale {
+  padding: 10px 0px;
+  max-width: 500px;
+}
+
+.revea-scale__buttons-wrapper {
+  display: flex;
+  background-color: transparent;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.revea-scale__labels-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  & span {
+    display: block;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  & .mid-label-wrapper {
+    padding-left: 5px;
+  }
+
+  & div:first-child {
+    padding-right: 5px;
+  }
+
+  & div:last-child {
+    padding-left: 5px;
+  }
+
+  @media screen and (min-width: 540px) {
+    & span {
+      display: block;
+      line-height: 20px;
+    }
+  }
+}
+
+.revea-scale__button {
+  background-color: getColor('grey.50');
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  border: none;
+  transition: all 0.2s;
+
+  &:hover {
+    transform: scale(1.25);
+    background-color: $primary-red;
+    cursor: pointer;
+  }
+}
+
+.revea-scale__button--active {
+  background-color: $primary-blue;
+}
+
+.revea-scale__separator {
+  min-width: 10px;
+  min-height: 2px;
+  background-color: getColor('grey.50');
+  flex: 1;
+  display: inline-block;
+  margin: 0px 5px;
+}
+
+.scale__numbers--text {
+  width: 14px;
+  text-align: center;
+}
+
+.scale__labels-numbers-all--wrapper {
+  display: flex;
+  justify-content: space-between;
+  font-size: getFontSize('small');
+}
+
+.scale__button-all--active {
+  background-color: $secondary-pink;
+}
+
+.scale__button-all--selected {
+  transform: scale(1.25);
+}
+
+.scale__separator-all--active {
+  background-color: $secondary-pink;
+}

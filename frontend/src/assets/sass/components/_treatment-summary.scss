@@ -1,0 +1,40 @@
+.card__calendar {
+  height: 18px;
+  width: 18px;
+}
+
+.media__title {
+  font: 700 18px/1 'Euclid Circular A', sans-serif;
+  color: #3C4866;
+}
+
+.card__action > a {
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.card__action {
+
+  display: flex;
+  justify-content: center;
+
+  & > .disabled {
+    cursor: not-allowed;
+
+  }
+
+}
+
+.treatment__days {
+  font-weight: getFontWeight('bold');
+  font-size: getFontSize('xx-large');
+  color: getColor('primary.red');
+}
+
+.card__container {
+  height: 100%;
+}
+
+.fs-14 {
+  font-size: getFontSize('small');
+}

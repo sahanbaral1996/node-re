@@ -1,0 +1,120 @@
+.skin-conditions-image-layout__title {
+  color: getColor('primary.red');
+  font-weight: getFontWeight('semibold');
+}
+
+.ml-36 {
+  margin-right: 36px;
+}
+
+.skin-conditions-image-layout__img {
+  height: 352px;
+}
+
+.skin-conditions-image-layout__card {
+  flex: 1 1;
+}
+
+.skin-conditions-image-layout__top-wrapper {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.info-blurb {
+  color: getColor('primary.red');
+  font-size: getFontSize('large');
+}
+
+.skin-conditions-image-layout__body-content * {
+  font-family: $font-primary;
+  font-size: getFontSize('normal');
+  color: getColor('primary.blue');
+  background-color: transparent;
+}
+
+.skin-conditions-image-layout__body-content {
+  margin: 46px 0 68px;
+
+  .ingredient-wrapper {
+    display: flex;
+
+    img {
+      align-self: flex-start;
+      margin: 0 13px 0 4px;
+    }
+
+    p {
+      margin-top: 6px;
+
+      b {
+        display: block;
+        font-size: getFontSize('large') !important;
+        line-height: 23px;
+        font-weight: getFontWeight('bold');
+        margin-bottom: 5px;
+        color: getColor('grey.100') !important;
+      }
+      span {
+        color: getColor('grey.100') !important;
+      }
+    }
+  }
+
+  .family-wrapper{
+    margin-bottom: 25px;
+
+    .family-image{
+      padding-top: 8px;
+      padding-right: 12px;
+
+      img{
+        height: 84px;
+        min-width: 84px;
+        object-fit: cover;
+      }
+    }
+
+    .family-name{
+      font-size: getFontSize('xx-large');
+      font-weight: getFontWeight('bold');
+      line-height: 28.8px;
+      color: #495057;
+      padding-top: 8px;
+    }
+    .duration{
+      font-size: getFontSize('normal');
+      font-weight: getFontWeight('medium');
+      line-height: 19.2px;
+      color: #495057;
+      margin-top: 2px;
+    }
+    .full-name{
+      font-size: getFontSize('normal');
+      font-weight: getFontWeight('medium');
+      line-height: 19.2px;
+      color: #3C4866;
+      margin-top: 8px;
+      a{
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.skin-conditions-image-layout__wrapper {
+  margin-bottom: 100px;
+}
+
+@media only screen and (max-width: 600px) {
+  .skin-conditions-image-layout__top-wrapper {
+    display: block;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .skin-conditions-image-layout__card {
+    margin-bottom: 20px;
+  }
+}
+

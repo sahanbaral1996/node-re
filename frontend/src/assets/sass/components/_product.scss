@@ -1,0 +1,130 @@
+.product {
+    &-page{
+        background-color: getColor('white.base');
+        position: relative;
+        min-height: calc(100vh - #{$header-height});
+        padding-bottom: 2rem;
+        .container {
+            max-width: 550px;
+        }
+    }
+    &-top {
+        margin-bottom: 150px;
+    }
+
+    &__title {
+        font-weight: getFontWeight('semibold');
+        font-size: 36px;
+        line-height: 43px;
+    }
+
+    &__description {
+        font-size: getFontSize('large');
+        line-height: 23px;
+    }
+}
+
+.product-top {
+    position: relative;
+
+    &__hero {
+        position: absolute;
+        left: -35%;
+        top: 30%;
+    }
+}
+
+.plan {
+    &-page {
+        .img-deco{
+            width: 100%;
+        }
+        .vertical-separator{
+            height: 160px;
+            display: inline-block;
+            width: 1px;
+            background: #A4A4A4;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    &-amount {
+        font-size: 64px;
+        color: $color-primary;
+        font-family: $font-secondary;
+        font-weight: 600;
+        line-height: 0.8;
+    }
+    &-top {
+        position: relative;
+    }
+    &-image {
+        position: absolute;
+        top:0;
+        right: -160px;
+    }
+}
+
+.info {
+    border-radius: 30px;
+    padding: 15px 30px 20px;
+    &-primary{
+        background: #FEDDD3;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .product {
+        &-page{
+            .img-deco {
+                top: 35%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .plan {
+        &-image {
+            display: none;
+        }
+    }
+    .product {
+        &-page{
+            .img-deco {
+                top: 38%;
+            }
+        }
+        &-top img{
+            display: none;
+        }
+    }
+}
+
+.product-top {
+    margin-bottom: 80px;
+}
+
+.product__img-deco {
+    width: 100%;
+    margin-top: 60px;
+}
+
+.product__intro__img {
+    position: absolute;
+    top: 0;
+    right: -40%;
+    max-width: 350px;
+}
+
+@media screen and (max-width: 768px) {
+    .product-page .container {
+        max-width: 660px;
+    }
+    .product__intro__img {
+        right: -10%;
+    }
+}

@@ -1,0 +1,65 @@
+.dashboard__hero {
+  color: getColor('white.base');
+  background-color: getColor('secondary.pink');
+}
+
+.personalized-solution__info {
+  font-size: getFontSize('large');
+  font-weight: getFontWeight('bold');
+}
+
+.personalized-solution__border--left {
+  border-left: 1px solid transparentize($color: #ffffff, $amount: 0.3);
+}
+.skin-conditions__svg {
+  width: 24px;
+  height: 24px;
+}
+
+.skin-conditions {
+  margin: -14px;
+
+  & > * {
+    margin: 14px;
+  }
+
+  .btn {
+    color: getColor('white.base') !important;
+    font-size: getFontSize('large');
+    font-weight: normal;
+    text-decoration: underline;
+  }
+
+  .btn:hover,
+  .btn:focus {
+    text-decoration: none;
+  }
+
+  .skin-condition--no-underline {
+    cursor: default;
+    text-decoration: none;
+  }
+}
+
+.personalized-solution__days {
+  font-size: getFontSize('xx-large');
+  font-weight: getFontWeight('bold');
+}
+
+.reassessment-block {
+  max-width: 344px;
+  min-width: 344px;
+}
+
+.reassessment-btn {
+  padding: 10px 12px;
+}
+
+@media screen and (max-width: 768px) {
+  .reassessment-block__container {
+    flex-direction: column;
+  }
+  .personalized-solution__border--left {
+    border: none;
+  }
+}

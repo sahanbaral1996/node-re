@@ -1,0 +1,92 @@
+.addon-order {
+    &-wrapper {
+        max-width: calc(654px + 32px) !important;
+    }
+
+    .cart_products {
+        width: 100%;
+    }
+}
+
+.header-description {
+    font-size: getFontSize('normal');
+
+    &-content {
+        color: #3C4866;
+        font-weight: getFontWeight('medium');
+        max-width: 516px;
+    }
+
+    .price {
+        color: #3C4866;
+        text-align: right;
+    }
+}
+
+.trial-addon-order {
+    &-title {
+        color: #3C4866;
+        font-size: getFontSize('normal');
+    }
+
+    &-description {
+        color: #495057;
+        font-size: getFontSize('normal');
+    }
+
+    &-add-remove {
+
+        .trial-addon-order-button {
+            color: #B91F56;
+            font-weight: getFontWeight('bold');
+            font-size: getFontSize('normal');
+            line-height: 19.2px;
+            text-align: right;
+
+            .trial-addon-product-added {
+                font-size: getFontSize('normal');
+                line-height: 19.2px;
+                color: #A4A4A4;
+                font-weight: getFontWeight('medium');
+            }
+
+            .add {
+                cursor: pointer;
+            }
+
+            .remove {
+                cursor: pointer;
+                color: #495057;
+            }
+        }
+    }
+
+    &-product-detail {
+        border: 1px solid #C4C4C4;
+    }
+
+    &-product-image {
+        img {
+            width: 135px;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &-learn-more {
+        a {
+            font-weight: getFontWeight('medium');
+            font-size: getFontSize('normal');
+            color: #495057;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+
+    &-disclaimer {
+        color: #3C4866;
+        font-size: getFontSize('normal');
+        font-weight: getFontWeight('medium');
+        background: rgba(214, 144, 41, 0.08);
+    }
+}

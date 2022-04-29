@@ -1,0 +1,200 @@
+.user-registration{
+  &__wrapper{
+    max-width: 540px;
+    margin: 0 auto;
+    padding: 0 16px 50px;
+    &.customize-order-wrapper{
+      max-width: 654px;
+
+      .user-registration__header {
+        font-family: 'Venti CF', sans-serif;
+        font-size: 2.625rem;
+        font-weight: 500;
+        line-height: 1.1;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+    }
+    h3{
+      font-size: getFontSize('xxxx-large');
+      line-height: 30.75px;
+    }
+  }
+  &.assessment-wrapper{
+    margin: 0 auto;
+    padding: 0 16px 50px;
+  }
+  &__wrapper > &__header{
+    font-size: getFontSize('xxxx-large');
+    font-weight: getFontWeight('bold');
+    line-height: 96.1%;
+  }
+  &__wrapper > &__sub-header{
+    font-size: getFontSize('xxx-large');
+    font-weight: getFontWeight('bold');
+    line-height: 29px;
+  }
+  &__header {
+    margin: 40px 0;
+  }
+  &__sub-header {
+    font-size: getFontSize('large');
+    font-weight: getFontWeight('bold');
+    padding: 10px;
+  }
+  &__eligible-package {
+    display: block;
+    margin: 0 auto;
+    max-width: 248px;
+  }
+  &__input-wrapper {
+    margin-bottom: 8px;
+  }
+  &__body {
+    margin-bottom: 40px;
+  }
+  &__links {
+    color: inherit;
+    text-decoration: underline;
+  }
+  &__package-description{
+    text-align: center;
+  }
+  &__sub-title{
+    font-size: getFontSize('x-large');
+    font-weight: getFontWeight('bold');
+  }
+  &__password-requirement {
+    background: rgba(214, 144, 41, 0.08);
+    padding: 16px;
+    color: getColor('grey.100');
+
+    ul {
+      padding-left: 1.5rem;
+
+      li::marker {
+        font-size: 0.6rem;
+      }
+    }
+  }
+}
+
+.full-face{
+  &-prescription-wrapper{
+    color: #212123;
+    max-width: 654px;
+    font-weight: getFontWeight('bold');
+    font-size: getFontSize('xx-large');
+    line-height: 29px;
+    img{
+      width: 654px;
+    }
+    p{
+      padding: 5px 25px 10px 0px
+    }
+  }
+   &-header, &-cost{
+    font-weight: getFontWeight('bold');
+    font-size: getFontSize('xx-large');
+    line-height: 28.8px;
+  }
+  &-cost{
+    &.discounted{
+      color: $border-color;
+    }
+    &.strikethrough {
+      position: relative;
+      &:before {
+        content: '';
+        position: absolute;
+        display: inline-block;
+        height: 2px;
+        width: 150%;
+        background: $border-color;
+        transform: rotate(-18deg);
+        top: 15px;
+        left: -10px;
+      }
+    }
+  }
+  &-free{
+    font-size: getFontSize('large');
+    font-weight: getFontWeight('bold');
+    line-height: 21.6px;
+    color: #495057;
+    font-style: italic;
+    flex: 1;
+    padding-top: 10px;
+  }
+  &-description{
+    font-weight: getFontWeight('medium');
+    font-size: getFontSize('normal');
+    line-height: 21.6px;
+    &-small{
+      font-weight: getFontWeight('medium');
+      font-size: getFontSize('normal');
+      line-height: 19.2px;
+    }
+  }
+  &-more{
+    font-size: getFontSize('normal');
+    font-weight: getFontWeight('medium');
+    line-height: 19.2px;
+    text-decoration-line: underline;
+    cursor: pointer;
+
+    a {
+      color: inherit;
+    }
+  }
+  &-price{
+  font-weight: getFontWeight('bold');
+    font-size: getFontSize('large');
+    color: #000;
+    cursor: pointer;
+    &.add{
+      color: #B91F56;
+    }
+    &.remove{
+      color:gray
+    }
+  }
+  &-button{
+    font-weight: getFontWeight('bold');
+    font-size: getFontSize('xx-large');
+    line-height: 29px;
+    cursor: pointer;
+    color: #B91F56;
+    padding: 0;
+    min-width: 0px;
+
+    &.customize-product-added{
+    color: #C4C4C4;
+    text-align: right;
+    cursor: auto;
+    font-size: getFontSize('xx-large');
+    font-weight: getFontWeight('bold');
+    }
+  }
+}
+
+.stepper-wrapper{
+  width: 100%;
+  div{
+    margin: 0 auto;
+    max-width: 654px;
+  }
+}
+
+.MuiOutlinedInput-input {
+  background-color: transparent !important;
+}
+
+.MuiPaper-root {
+  margin-top: 0;
+  padding-bottom: 0;
+}
+
+.admin-registration-Completed-username {
+  font-weight: getFontWeight('bold');
+}

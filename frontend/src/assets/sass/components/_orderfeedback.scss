@@ -1,0 +1,17 @@
+.order-feedback {
+  padding: 0 10px;
+  min-width: 280px;
+
+  & .error-message {
+    display: block;
+    margin: 8px 0px 2px;
+  }
+
+  &__modal {
+    max-width: 603px;
+  }
+}
+
+.order-feedback__title {
+  margin-bottom: 20px;
+}

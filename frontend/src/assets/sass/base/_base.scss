@@ -1,0 +1,199 @@
+// ==========================================================================
+// Base
+// A Base rule is applied to HTML element using an element selector, a
+// descendent selector, or a child selector, along with any pseudo-classes.
+// We cannot reference any element defined here by their respective class or ID name.
+// This defines the default styling for how that element should look.
+// Changes in style other than default should be overwritten using other partials.
+// ==========================================================================
+
+// Import Custom font here.
+@import url($font-url);
+
+// Reset CSS
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // Global Clearfixing
+  @if $grid-type == float {
+    &:after {
+      clear: both;
+      content: '';
+      display: block;
+    }
+  }
+}
+
+// Base Code
+html,
+body {
+  font-size: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: $font-primary;
+  font-size: $base__font-size;
+  text-rendering: optimizeLegibility;
+  line-height: $base__body__line;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.custom-link {
+  text-decoration-line: underline;
+  color: $primary-blue;
+  &:hover {
+    text-decoration-line: none;
+  }
+}
+
+@if $grid-type == float {
+  a,
+  span,
+  strong {
+    &:after {
+      @extend %clearfix-none;
+    }
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-secondary;
+  line-height: $base__header__line;
+}
+
+h1 {
+  @include getHeaderFontSize('h1');
+}
+
+h2 {
+  @include getHeaderFontSize('h2');
+}
+
+h3 {
+  @include getHeaderFontSize('h3');
+}
+
+h4 {
+  @include getHeaderFontSize('h4');
+}
+
+h5 {
+  @include getHeaderFontSize('h5');
+}
+
+h6 {
+  @include getHeaderFontSize('h6');
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+.list-style-none {
+  li {
+    list-style-type: none;
+  }
+}
+
+.font-weight-bold {
+  font-weight: bold;
+}
+
+.font-italic {
+  font-style: italic;
+}
+
+/* placeholder color */
+::-webkit-input-placeholder {
+  /* Edge */
+  color: #a4a4a4;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #a4a4a4;
+}
+
+::placeholder {
+  color: #a4a4a4;
+  line-height: 1.3;
+}
+
+:focus-visible {
+  outline-offset: 3px;
+}
+
+input,
+textarea {
+  &:focus {
+    outline: none;
+  }
+}
+
+.border__wrap,
+.revea-input__wrapper {
+  &:focus-within {
+    border-color: $primary-blue;
+    &:focus-visible {
+      outline: -webkit-focus-ring-color auto 3px;
+      outline-offset: 3px;
+    }
+  }
+}
+
+/* Change the white to any color ;) */
+:-webkit-autofill,
+:-webkit-autofill:hover,
+:-webkit-autofill:focus,
+:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #fafafa inset !important;
+}
+::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+.main-content {
+  min-height: 700px;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.none-text {
+  margin-top: 28px;
+}
+.none-text a {
+  font-size: 12px;
+  font-weight: 700;
+  border-bottom: 0 !important;
+  color: #212123 !important;
+}
+
+body.modal-open {
+  overflow-y: hidden;
+
+  & > #root {
+    padding-right: 15px;
+  }
+}
+body.modal-close {
+  overflow-y: auto;
+
+  & > #root {
+    padding-right: 0;
+  }
+}

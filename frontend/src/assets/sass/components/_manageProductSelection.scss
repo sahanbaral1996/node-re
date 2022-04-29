@@ -1,0 +1,112 @@
+.manage-product-selection {
+  .disclaimer {
+    font-family: 'Venti CF', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0em;
+    text-align: left;
+    background: #fff5c3;
+  }
+
+  .product {
+    .details {
+      .header {
+        .title {
+          font-family: 'Venti CF', sans-serif;
+          font-size: 1.5rem;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 1.2;
+          letter-spacing: 0em;
+          text-align: left;
+        }
+
+        .cost {
+          font-family: 'Venti CF', sans-serif;
+          font-size: 1.125rem;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 1.9;
+          letter-spacing: 0em;
+          text-align: center;
+          color: #495057;
+        }
+      }
+
+      .description {
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #495057;
+      }
+    }
+
+    .add-remove-control{
+
+      min-height: 40px;
+
+      .product-added-text {
+        font-family: 'Venti CF', sans-serif;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.2;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #a4a4a4;
+      }
+    }
+  }
+
+  .order-estimate {
+    background: #d6902914;
+
+    .ongoing-monthly-fee {
+      .lineItem {
+        .description,
+        .cost {
+          font-family: 'Venti CF', sans-serif;
+          font-size: 1rem;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 1.2;
+          letter-spacing: 0em;
+          text-align: left;
+        }
+      }
+
+      .total {
+        font-family: 'Venti CF', sans-serif;
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.2;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #3c4866;
+      }
+
+      .disclaimer {
+        background: inherit;
+        font-family: 'Venti CF', sans-serif;
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+    }
+  }
+}
+
+hr {
+  &.seperator {
+    border: 1px solid #a4a4a4;
+  }
+}

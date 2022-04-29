@@ -1,0 +1,71 @@
+.standalone-OC {
+  &-container {
+    position: relative;
+    background-color: getColor('white.base');
+
+    .OC {
+      &__container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        color: getColor('black.base');
+        z-index: 1;
+      }
+
+      &__title {
+        font-size: 48px;
+        font-weight: getFontWeight('bold');
+        line-height: 96.1%;
+        margin: calc(150px - #{$header-height}) 0 16px;
+      }
+
+      &__description {
+        line-height: 19px;
+        font-size: 16px;
+        font-weight: getFontWeight('normal');
+        max-width: 373px;
+        margin-bottom: 16px;
+      }
+
+      &__subtitle {
+        font-size: getFontSize('large');
+        line-height: 22px;
+        font-weight: getFontWeight('bold');
+        margin-bottom: 16px;
+      }
+
+      &____spam-info {
+        padding: 0 16px;
+      }
+
+      &__btn {
+        min-width: 222px;
+      }
+    }
+
+    .content {
+      height: 100%;
+      display: flex;
+    }
+  }
+
+  &-image__line {
+    position: absolute;
+    width: 100%;
+    top: 135px;
+    left: 0;
+  }
+}
+
+@include mqmax('xl') {
+  .standalone-OC {
+    &-container {
+      .OC {
+        &__title {
+          margin: 0px 0 16px;
+        }
+      }
+    }
+  }
+}

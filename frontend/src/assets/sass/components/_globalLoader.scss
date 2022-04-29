@@ -1,0 +1,29 @@
+.global-loader__container {
+  height: calc(100vh - #{$header-height});
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: getColor('secondary.pink');
+
+
+  > svg {
+    width: 156px;
+    height: 32px;
+    animation: blink 4s infinite both;
+
+  }
+
+}
+
+@keyframes blink {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,20 @@
+.revea-checkbox__wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  .MuiFormControlLabel-root{
+    margin-bottom: 0;
+  }
+}
+
+.revea-checkbox__label {
+    color: getColor('grey.75');
+    font-size: getFontSize('normal');
+}
+
+.MuiIconButton-colorSecondary:hover {
+  background-color: transparentize($primary-blue, 0.94) !important;
+}
+.MuiCheckbox-colorSecondary.Mui-checked:hover {
+  background-color: transparentize($primary-blue, 0.94) !important;
+}

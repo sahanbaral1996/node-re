@@ -1,0 +1,47 @@
+.product-plan {
+  &-regimen-details {
+    .highlighted {
+      color: $secondary-pink;
+    }
+    .sub-text {
+      font-size: getFontSize('xx-large');
+      color: getColor('grey.75');
+    }
+  }
+  &-subscription-details {
+    .highlighted {
+      color: $primary-red;
+      font-weight: getFontWeight('semibold');
+      font-size: 4rem;
+    }
+    .activation, .billing {
+      border-bottom: 1px solid $border-color;
+      font-size: getFontSize('large');
+      .fee {
+        align-items: center;
+        font-size: getFontSize('xx-large');
+      }
+    }
+    a {
+      color: $secondary-pink;
+      font-weight: bold;
+      text-decoration-line: none;
+      &:hover {
+        text-decoration-line: underline;
+      }
+    }
+  }
+  &-testimonial-images {
+    .results {
+      color: $secondary-pink;
+    }
+  }
+  &-testimonial {
+    .detail {
+      font-size: getFontSize('xx-large');
+    }
+    .author {
+      font-weight: getFontWeight('semibold');
+    }
+  }
+}

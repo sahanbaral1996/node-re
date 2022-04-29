@@ -1,0 +1,62 @@
+.upload-image-body__button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.assessment-upload-step-body__title {
+  margin-bottom: 36px;
+  color: getColor('grey.100');
+  font-size: getFontSize('large');
+}
+
+.assessment-upload-step-body__privacy-policy {
+  margin: 22px 0;
+  color: getColor('grey.50');
+  font-size: getFontSize('small');
+}
+
+.assessment-upload-step-body__photo-acceptance {
+  margin: 22px 0;
+  color: #3c4866;
+  font-size: getFontSize('small');
+
+  span {
+    color: getColor('secondary.pink');
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+.assessment-upload__step-skip {
+  margin: 22px 0;
+  color: getColor('grey.100');
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.assessment-upload-step-body__bottom {
+  text-align: center;
+  button {
+    max-width: 435px;
+    width: 100%;
+    padding: 18px 22px;
+    border: none;
+    cursor: pointer;
+    color: white;
+
+    &:hover {
+      opacity: 0.9;
+    }
+
+    &.disabled {
+      opacity: 0.5;
+      cursor: default;
+    }
+  }
+
+  .assessment-upload-button__item-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

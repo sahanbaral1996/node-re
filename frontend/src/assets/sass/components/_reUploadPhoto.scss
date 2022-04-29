@@ -1,0 +1,39 @@
+.reupload__title {
+  font-size: getFontSize('xxxxx-large');
+}
+
+.reupload__body {
+  max-width: 640px;
+  margin: 0 auto;
+
+  .upload__header {
+    padding: 0 100px;
+  }
+
+  .assessment-upload-step-body__privacy-policy{
+      margin: 22px 0;
+      color: getColor('grey.50');
+      font-size: getFontSize('small');
+  }
+
+  .assessment-upload-step-body__photo-acceptance{
+    margin: 22px 0;
+    color: #3c4866;
+    font-size: getFontSize('small');
+  }
+
+  .reupload__upload-btn {
+    max-width: 432px;
+  }
+
+}
+
+
+@media screen and (max-width: 576px) {
+
+  .reupload__body {
+    .upload__header {
+      padding: 0;
+    }
+  }
+}

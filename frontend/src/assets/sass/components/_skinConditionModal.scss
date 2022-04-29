@@ -1,0 +1,27 @@
+.skin-condition__details {
+
+  p:not(:last-child) {
+    padding-bottom: 24px;
+  }
+
+  p > b {
+    display: block;
+    font-size: getFontSize('xxxx-large') !important;
+    font-weight: getFontWeight('bold');
+    padding-bottom: 24px;
+  }
+
+
+  p > span {
+    font-size: getFontSize('normal') !important;
+  }
+
+}
+.skin-condition__modal {
+  max-width: 593px;
+
+  .modal__container {
+    padding: 0 38px 20px 38px;
+  }
+
+}

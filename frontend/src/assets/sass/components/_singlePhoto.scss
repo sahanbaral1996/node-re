@@ -1,0 +1,43 @@
+.single-photo__container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.single-photo__img {
+  object-fit: contain;
+  height: 60vh;
+}
+
+.photo-viewer__single-mode {
+  .modal__container {
+    padding: 0 0 20px 0;
+  }
+}
+
+.single-photo__btn-groups {
+  position: absolute;
+  right: 15px;
+  bottom: 25px;
+  background-color: getColor('white.base');
+  overflow-x: hidden;
+  border: 1px solid getColor('grey.50');
+  border-radius: 50px !important;
+}
+
+.single-photo__nav {
+  .nav {
+    &__left, &__right {
+      position: absolute;
+        z-index: 1;
+        top: 50%;
+        transform: translateY(-50%);
+        background: transparentize($color: #ffffff, $amount: 0.4);
+    }
+    &__left {
+      left: 20px;
+    }
+    &__right {
+      right: 20px;
+    }
+  }
+}

@@ -1,0 +1,61 @@
+.btn-fab {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 1;
+  display: flex;
+  place-items: center;
+
+  .fab-tooltip {
+    cursor: pointer;
+
+    .fab-tooltip-text {
+      font-family: 'Venti CF', sans-serif;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 1.2;
+      letter-spacing: 0em;
+      text-align: left;
+      color: $primary-blue;
+
+      background: #fff;
+      border-radius: 50px;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 10px;
+    }
+  }
+
+  .fab-button {
+    background: #fff;
+    width: 62px;
+    height: 62px;
+
+    .fab-icon {
+      width: 34px;
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .btn-fab {
+    bottom: 20px;
+    right: 20px;
+    z-index: 1;
+    display: flex;
+
+    .fab-button {
+      background: #fff;
+      width: 48px;
+      height: 48px;
+
+      .fab-icon {
+        width: 28px;
+      }
+    }
+  }
+}
+
+.hideTooltip {
+  display: none;
+  transition: 0.2s ease;
+}

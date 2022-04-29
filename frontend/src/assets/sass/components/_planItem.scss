@@ -1,0 +1,47 @@
+
+.plan-item__selfie {
+  width: 118px;
+  height: 112px;
+  object-fit: cover;
+  cursor: pointer;
+  margin-bottom: 0.75rem;
+
+  &:hover, :focus {
+    box-shadow: $box-shadow;
+  }
+}
+
+.plan-item__wrapper {
+  display: inline-block;
+  width: 118px;
+  height: 112px;
+  position: relative;
+}
+
+.plan-item__wrapper::before {
+  content: '';
+  opacity: 0.6;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: getColor('primary.blue');
+}
+
+.plan-item__count {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  color: getColor('white.base');
+  font-size: getFontSize('large');
+  user-select: none;
+  transition: $transition;
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: $box-shadow;
+  }
+}

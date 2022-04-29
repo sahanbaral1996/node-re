@@ -1,0 +1,23 @@
+.step-button-icon__wrapper {
+    width:44px;
+    height: 45px;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: getColor('primary.pink')
+}
+
+.step-button-active {
+    background-color: getColor('primary.red');
+}
+
+.assessment-upload-photo__header {
+    padding: 36px 0 12px 0;
+    font-size: 36px;
+    font-weight: getFontWeight('semibold');
+}
+
+.step-button-complete {
+    background-color: getColor('secondary.green')
+}

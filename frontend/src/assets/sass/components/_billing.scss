@@ -1,0 +1,46 @@
+.billing {
+  &-container {
+    position: relative;
+    height: calc(100vh - #{$header-height});
+    background-color: getColor('white.base');
+  }
+
+  &-text {
+    @include mqmax('sm'){
+      order: 2;
+    }
+  }
+
+  &__title {
+    font-weight: getFontWeight('bold');
+    font-size: getFontSize('super-large');
+  }
+
+  &__description {
+    font-size: getFontSize('normal');
+    line-height: 20px;
+  }
+
+}
+
+
+.billing__check-circle {
+  height: 66px;
+  width: 66px;
+}
+
+.billing__error {
+  color: getColor('primary.red')
+}
+
+.billing-image__line {
+  position: absolute;
+  width: 100%;
+  top: 135px;
+  left: 0;
+}
+
+.image-div {
+  margin-top: 200px;
+}
+

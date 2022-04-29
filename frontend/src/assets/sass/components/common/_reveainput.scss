@@ -1,0 +1,62 @@
+input,
+select {
+  line-height: 1.5;
+}
+.revea-input {
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  color: inherit;
+  color: getColor('grey.75');
+  background-color: transparent;
+  margin-top: 4px;
+  &::placeholder {
+    font-family: $font-secondary;
+  }
+  &[type='password'] {
+    font-family: 'Euclid Circular A', sans-serif;
+  }
+}
+
+.revea-input__wrapper {
+  position: relative;
+  padding: 18px 24px;
+  box-sizing: border-box;
+  border: 1px solid #c4c4c4;
+  font-size: getFontSize('normal');
+  label {
+    font-weight: bold;
+  }
+}
+
+.revea-input__label {
+  cursor: pointer;
+  display: inline-block;
+  width: 100%;
+  font-weight: bold;
+  color: getColor('grey.100');
+}
+
+.date-picker__select {
+  select {
+    margin-right: 24px;
+    height: auto;
+    border-radius: 0px;
+    background-color: transparent;
+    padding-right: 20px;
+  }
+}
+
+.user-registration__tooltip {
+  position: absolute;
+  top: 30px;
+  right: 24px;
+}
+
+.user-registration__eye {
+  position: absolute;
+  right: 18px;
+  bottom: 22px;
+  color: getColor('grey.50');
+}

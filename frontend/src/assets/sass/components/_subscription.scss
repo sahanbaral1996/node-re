@@ -1,0 +1,241 @@
+.subscription {
+  &-order-summary {
+    border: 1px solid #c4c4c4;
+    .payment-due-cost {
+      font-weight: getFontWeight('bold');
+      color: $primary-blue;
+      font-size: getFontSize('large');
+      &.admin {
+        font-size: 1.25rem;
+      }
+
+      &.crossed {
+        text-decoration: line-through;
+      }
+
+      &.light {
+        font-weight: getFontWeight('normal');
+        text-decoration: line-through;
+      }
+
+      &.normal{
+        text-decoration: none;
+      }
+    }
+    .subscription-cost {
+      font-weight: getFontWeight('normal');
+      line-height: 19.2px;
+      span {
+        &.cost-text {
+          position: relative;
+          &::before {
+            content: '';
+            position: absolute;
+            display: none;
+            height: 1px;
+            width: 120%;
+            background: #000000;
+            transform: rotate(-8deg);
+            top: 10px;
+            left: -4px;
+          }
+        }
+
+        &.free-text {
+          font-family: 'Venti CF', sans-serif;
+          font-size: 1rem;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 1.1;
+          letter-spacing: 0em;
+          text-align: left;
+          color: #b91f56;
+        }
+      }
+    }
+    .subscription-cost-description {
+      font-weight: getFontWeight('bold');
+    }
+    .subscription-deduction {
+      font-weight: getFontWeight('bold');
+      color: $secondary-pink;
+    }
+    .subheader3 {
+      color: #a4a4a4;
+    }
+    .order-summary-header {
+      font-size: 1.5rem;
+    }
+    .bimonthly-charge {
+      font-family: 'Venti CF', sans-serif;
+      font-size: 0.875rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.1;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #3c4866;
+    }
+  }
+  &-item-wrapper {
+    border-bottom: 1px solid #c4c4c4;
+  }
+  &-others {
+    .risk {
+      font-weight: getFontWeight('bold');
+    }
+    .cancel {
+      font-weight: getFontWeight('bold');
+    }
+  }
+  .card-error {
+    border: 1px #ff1e00 solid;
+    color: #ff1e00;
+  }
+  &__ingredients {
+    color: inherit;
+    text-decoration: underline;
+  }
+  .coupon-header {
+    font-weight: getFontWeight('bold');
+  }
+}
+
+.wash-icon {
+  max-width: 211px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  margin: 0 auto;
+}
+
+.disclaimer {
+  font-family: 'Venti CF', sans-serif;
+  font-size: 0.875;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #495057;
+}
+
+.disclaimer-text {
+  font-size: large;
+}
+
+.block-wrapper {
+  .header {
+    font-size: getFontSize('xx-large');
+    font-weight: getFontWeight('bold');
+    line-height: 28.8px;
+  }
+  &-container {
+    background: #d6902914;
+
+    .image-row {
+      .image-container {
+        &-wrapper {
+          margin: 0 auto;
+
+          img {
+            cursor: zoom-in;
+          }
+
+          .zoom-in-text {
+            font-size: 1rem;
+            font-style: italic;
+
+            .text {
+              vertical-align: super;
+            }
+          }
+
+          .caption {
+            font-size: getFontSize('normal');
+            font-weight: getFontWeight('bold');
+            line-height: 19.2px;
+          }
+        }
+      }
+    }
+
+    .subheading {
+      font-size: getFontSize('normal');
+      font-weight: getFontWeight('medium');
+      line-height: 19.2px;
+    }
+    .review {
+      font-size: 1.375rem;
+      font-weight: getFontWeight('medium');
+      line-height: 26.4px;
+    }
+
+    .title {
+      font-family: Venti CF;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 29px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+
+    p {
+      font-family: 'Venti CF', sans-serif;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0.04em;
+      text-align: left;
+
+      a {
+        text-decoration: underline;
+        color: inherit;
+        transition: $transition;
+        &:hover {
+          color: $primary-red;
+        }
+      }
+    }
+  }
+}
+
+.order-summary {
+  .subheader3 {
+    color: #a4a4a4;
+  }
+}
+
+.order-features {
+  color: $secondary-pink;
+}
+
+.subscription-order-item {
+  display: 'flex';
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.product-added {
+  font-weight: 500;
+  font-size: getFontSize('large');
+  color: #a4a4a4;
+  margin-right: 10px;
+  line-height: 26px;
+}
+
+.admin-summary {
+  width: 100%;
+  height: 100%;
+}
+
+.card-placeholder {
+  ::placeholder {
+    color: #a4a4a4;
+  }
+}

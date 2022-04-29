@@ -1,0 +1,38 @@
+.reassement__wrapper {
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+.mg-top-20 {
+  margin-top: 20px;
+}
+
+.reassessment-upload-photo__image-wrapper {
+  background-color: getColor('primary.red');
+  width: 44px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reassessment-upload-photo__tab {
+  display: flex;
+  align-items: center;
+  margin: 24px 0;
+}
+
+.reassessment-upload-photo__tab span {
+  margin-left: 12px;
+  font-weight: getFontWeight('bold');
+  font-size: getFontSize('small');
+}
+
+.reassessment__circle-wrapper {
+  position: absolute;
+  z-index: -1;
+  @include mqmax('md') {
+    display: none;
+  }
+}

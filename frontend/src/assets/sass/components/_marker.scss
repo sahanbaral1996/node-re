@@ -1,0 +1,21 @@
+.marker__wrapper {
+    width: 1px;
+    margin-top:20px;
+    grid-column: 115;
+    position: relative;
+    z-index: $z-index-4;
+    background-color: getColor('primary.red');
+    pointer-events: none;
+}
+
+.marker__wrapper:before{
+    top: 0;
+    content: '';
+    width: 8px;
+    left: -3px;
+    height: 8px;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    background-color: getColor('primary.red');
+  }

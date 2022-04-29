@@ -1,0 +1,75 @@
+.product-selection{
+    max-width: 654px; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    &-wrapper{
+        padding: 0 !important;
+    }
+}
+
+.user-details-card{
+    &-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        text-align: right;
+        .title{
+            font-size: 1.5rem;
+            font-weight: getFontWeight('bold');
+            line-height: 28.8px;
+            color: #212123;
+            margin-bottom: 8px;
+        }
+        .name{
+            font-size: 1.125rem;
+            font-weight: getFontWeight('bold');
+            line-height: 21.6px;
+            color: #3C4866;
+            margin-bottom: 2px;
+            .loader{
+                padding: 0 !important;
+            }
+        }
+        .email{
+            font-size: 1rem;
+            font-weight: getFontWeight('medium');
+            line-height: 19.2px;
+            color: #3C4866;
+            margin-bottom: 8px;
+            .loader{
+                padding: 0 !important;
+            }
+        }
+        .restart{
+            font-size: 1rem;
+            font-weight: getFontWeight('medium');
+            line-height: 19.2px;
+            color: #495057;
+            .create-new-user{
+                font-size: 1rem;
+                font-weight: getFontWeight('bold');
+                line-height: 19.2px;
+                color: #B91F56 ;
+                &:hover{
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+                a{
+                    color: #B91F56;
+                }
+            }
+        }
+    }
+}
+
+.shipping-address-header,.card-header{
+    line-height: 28.8px;
+}
+
+.risk-free-trial{
+    font-size: 12px;
+    font-weight: getFontWeight('normal');
+    line-height: 14.4px;
+}

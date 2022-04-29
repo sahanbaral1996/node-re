@@ -1,0 +1,30 @@
+.user-signIn__wrapper{
+    max-width: 540px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-signIn {
+    width: 100%;
+}
+
+.user-signIn__header {
+    margin: 40px 0;
+}
+
+.user-signIn__input-wrapper {
+    margin-bottom: 8px;
+}
+
+.user-signIn__body {
+    margin-bottom: 10px;
+}
+
+.user-signIn__redirect {
+    text-transform: initial;
+    color: getColor('grey.100') !important;
+}

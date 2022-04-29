@@ -1,0 +1,88 @@
+.upload__wrapper {
+    padding: 30px 20px;
+    border: 2px dashed #C4C4C4;
+    transition: $transition;
+    background-color: getColor('white.base');
+}
+
+.upload__wrapper-clickable {
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.upload__wrapper-drag, .upload__wrapper:hover {
+    border-color: $secondary-pink;
+}
+
+.upload__container {
+    padding: 26px 0 16px;
+    text-align: center;
+}
+
+.upload__header {
+    font-size: getFontSize('x-large');
+    font-weight: getFontWeight('bold');
+}
+
+.upload__images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.upload__add-more-photos-container {
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.upload__add-more-photos {
+    cursor: pointer;
+    font-size: getFontSize('small');
+    color: getColor('secondary.pink');
+    font-weight: getFontWeight('bold');
+}
+
+.upload__images {
+    max-width: 190px;
+    height: 148px;
+    margin-bottom: 16px;
+    position: relative;
+    padding: 0 16px;
+    @include mqmax('sm') {
+        max-width: 150px;
+        height: 110px;
+    }
+}
+
+.upload__photo-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -16px;
+    margin-right: -16px;
+    justify-content: center;
+}
+.upload__delete-container {
+    top: 10px;
+    right: 26px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    border-radius: 50%;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+.upload__loading-container {
+    height: 213px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.upload__sub-header {   
+    font-weight: getFontWeight('medium');
+}

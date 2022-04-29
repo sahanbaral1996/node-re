@@ -1,0 +1,32 @@
+.assessment-upload-photo__wrapper {
+    margin: 0 auto;
+    max-width: 680px;
+
+    .MuiStepper-root {
+        max-width: 500px;
+        margin-left: -8px;
+    }
+
+    .MuiStepConnector-root {
+        margin: 0 18px;
+    }
+}
+
+.upload-photo__container {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.assessment-upload-photo__wrapper {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.upload-photo__wrapper {
+    min-height: 100vh;
+    height: 100vh;
+    background: url('../../images/background-curve.svg') no-repeat fixed bottom center / contain;
+    margin: 0 auto;
+}
+

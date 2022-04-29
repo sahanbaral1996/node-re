@@ -1,0 +1,20 @@
+.modal__container {
+  .user-plan {
+    &-details {
+      &-item {
+        ul:not(:last-child) {
+          padding-bottom: 1.75rem;
+        }
+        b {
+          display: block;
+          font-size: getFontSize('large');
+          font-weight: getFontWeight('bold');
+          padding-bottom: 1.75rem;
+        }
+        span {
+          font-size: getFontSize('normal');
+        }
+      }
+    }
+  }
+}

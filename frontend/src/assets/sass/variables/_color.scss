@@ -1,0 +1,40 @@
+// Default Color
+$white: #ffffff !default;
+$black: #000000 !default;
+
+// Base colors
+$primary-blue: #3C4866 !default;
+$primary-pink: #FEDDD3 !default;
+$primary-red: #F25C55  !default;
+$secondary-yellow: #D69029 !default;
+$secondary-pink: #B91F56 !default;
+$secondary-pink-dim: #872346 !default;
+
+$border-color: #A4A4A4;
+
+$color-primary: $primary-red;
+//Color Palette
+$colorMap: (
+  'white': (
+    'base': $white,
+  ),
+  'black': (
+    'base': $black,
+  ),
+  'primary': (
+    'pink': $primary-pink,
+    'blue': $primary-blue,
+    'red': $primary-red
+  ),
+  'secondary': (
+    'yellow': $secondary-yellow,
+    'pink': $secondary-pink,
+    'green': #00B14F,
+    'red': #FF1E00,
+  ),
+  'grey': (
+    '50': #A4A4A4,
+    '75': #495057,
+    '100': #212123
+  )
+);
